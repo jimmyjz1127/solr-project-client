@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Solr Personal Project</title>
+        <script src="./script.js"></script>
+        <link rel="stylesheet" href="style.css"/>
+
+
+    </head>
+    <body onload='onloadFunctions()' >
+        <div class="app">
+            <img src="./Assets/SPA-logo-removebg.png" class="logo"/>
+
+            <form name="f1" onsubmit='xmlhttpPost("/solr/select"); return false;' class="search-form">
+                <input type="text" name="query" class="search-input"/>
+                <input type="submit" type="submit" class="submit-btn" value="Search"/>
+            </form> 
+            
+            <div class="result-wrapper">
+                <div id="raw"></div>
+            </div>
+        </div>
+    </body>
+</html>
